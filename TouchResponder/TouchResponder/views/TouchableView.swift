@@ -25,21 +25,7 @@ class TouchableView: UIView {
         let touch = touches.first!
         
         // handle double-taps
-        if touch.tapCount == 2 {
-            
-            print("Double Tap Began")
-
-            // 1) handoff to next responder and print identity of next responder
-            next?.touchesBegan(touches, with: event)
-            print(next as Any)
-            
-            // 2) print identity of next.next responder
-//            next?.next?.touchesBegan(touches, with: event)
-            print(next?.next as Any)
-            
-        } else { // handle touches that are not double-taps
-              print("Single Tap Began")
-        }
+       
         
         /** location() function - returns the current location of a UITouch object in the coordinate system of the specified view **/
         print(touch.location(in:self))
