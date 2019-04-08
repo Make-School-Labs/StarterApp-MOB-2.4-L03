@@ -41,7 +41,7 @@ class TouchableView: UIView {
               print("Single Tap Began")
         }
         
-        /** location() function -- returns the current location of a UITouch object in the coordinate system of the specified view **/
+        /** location() function - returns the current location of a UITouch object in the coordinate system of the specified view **/
         print(touch.location(in:self))
         print(touch.location(in:self.window!))
 //        print(touch.location(in:nil))
